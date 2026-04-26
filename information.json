@@ -1,0 +1,67 @@
+{
+  "name": "Honga",
+  "label": "前端開發熱愛者",
+  "headImg": "/Watermelon_monet_style.jpg",
+  "skillTags": [
+    "HTML",
+    "CSS",
+    "JS",
+    "React",
+    "TS",
+    "Zustand",
+    "Next.js",
+    "Vitest",
+    "React Router",
+    "Git"
+  ],
+  "selfDescription": "I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art.",
+  "projects": [
+    {
+      "projName": "PromptBuilder",
+      "tags": ["React/Tailwind/Zustand", "React Router", "Jest", "Pywebview"],
+      "description": "A highly customizable and mobild first Template for personal portfolio and blog",
+      "imgSrc": "/projects/proj-promptbuilder.png",
+      "link": "https://github.com/Hongadesu/PromptBuilder"
+    },
+    {
+      "projName": "LaplaceAI - Akashic AI Chat Page",
+      "tags": ["React/Tailwind", "Next.js", "Vitest"],
+      "description": "A modern AI chat interface featuring real-time streaming responses and a responsive design, built for the Akashic AI ecosystem.",
+      "imgSrc": "/projects/proj-laplace-chat-ai.png",
+      "link": "https://laplaceai.co"
+    },
+    {
+      "projName": "AI Schema Editor",
+      "tags": ["React/Tailwind/Zustand", "React Hook Form"],
+      "description": "A data collection platform for building low-code dynamic forms, powered by AI-driven form filling and human validation.",
+      "imgSrc": "/projects/proj-schema-editor.png"
+    },
+    {
+      "projName": "Wordout",
+      "tags": [
+        "React/Tailwind/Zustand",
+        "React Hook Form",
+        "Electron"
+      ],
+      "description": "Wordout turns your collected words into daily workouts. Build your vocabulary, one session at a time.",
+      "imgSrc": "/projects/proj-wordout.jpg",
+      "isWorking": true
+    }
+  ],
+  "experiments": [
+    {
+      "projName": "Financial Agent Platform",
+      "tags": [
+        "React/Tailwind/Zustand",
+        "React Router",
+        "FastAPI",
+        "Pywebview",
+        "Nginx",
+        "Docker"
+      ],
+      "description": "A platform that allows users to create and manage their own financial input and output with AI agents. (Partial View due to confidentiality)",
+      "imgSrc": "/projects/proj-financial-agent-platform.gif",
+      "isPrivate": true
+    }
+  ]
+}
