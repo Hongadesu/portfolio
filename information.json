@@ -3,6 +3,8 @@
   "label": "前端開發熱愛者",
   "headImg": "Watermelon_monet_style.jpg",
   "headBgImg": "pixel-Image_20260422_163700.png",
+  "githubHome": "https://github.com/Hongadesu",
+  "email": "hongawork@outlook.com",
   "skillTags": [
     "HTML",
     "CSS",
@@ -15,7 +17,7 @@
     "React Router",
     "Git"
   ],
-  "selfDescription": "I am a software developer with a passion for web development, with experience building modern interfaces using the React ecosystem. I enjoy creating small tools based on web technologies, as well as developing desktop applications. I often use Electron, Pywebview, and Tauri to build cross-platform desktop apps.",
+  "selfDescription": "I am a software developer with a passion for web development, with experience building modern interfaces using the React ecosystem.\n\nI enjoy creating small tools based on web technologies, as well as developing desktop applications. I often use Electron, Pywebview, and Tauri to build cross-platform desktop apps.",
   "projects": [
     {
       "projName": "PromptBuilder",
