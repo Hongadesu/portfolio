@@ -1,0 +1,20 @@
+@reference "tailwindcss";
+
+/* > 1024px */
+.quote {
+  @apply max-w-2xl min-w-xl px-8 py-6 text-xl;
+}
+
+/* 1024px */
+@media (width < 64rem) {
+  .quote {
+    @apply max-w-xl min-w-lg px-6 py-4 text-lg;
+  }
+}
+
+/* 640px */
+@media (width < 40rem) {
+  .quote {
+    @apply mx-6 w-fit max-w-full min-w-auto px-6 py-4 text-base;
+  }
+}

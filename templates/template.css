@@ -1,0 +1,15 @@
+@reference "tailwindcss";
+
+/* > 1024px */
+
+/* 1024px */
+@media (width < 64rem) {
+}
+
+/* 768px */
+@media (width < 48rem) {
+}
+
+/* 640px */
+@media (width < 40rem) {
+}

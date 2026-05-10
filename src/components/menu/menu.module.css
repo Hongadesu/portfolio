@@ -1,0 +1,19 @@
+@reference "tailwindcss";
+
+/* > 1024px */
+.navLinkCtr {
+  @apply flex items-center justify-center gap-6;
+}
+
+.trigger {
+  @apply flex items-center justify-center;
+}
+
+.navLinkDrawerCtr {
+  @apply absolute top-16 left-0 flex w-full flex-col items-center justify-center gap-0 py-4;
+  background: var(--background);
+}
+
+.navLinkDrawerCtr > *:hover {
+  background: var(--surface);
+}

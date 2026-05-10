@@ -1,0 +1,79 @@
+.copyPop {
+  animation: copy-pop 1.5s ease-out forwards;
+}
+
+@keyframes copy-pop {
+  0% {
+    opacity: 0;
+    transform: translateY(6px) scale(0.8);
+  }
+
+  40%,
+  80% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.95);
+  }
+}
+
+.particle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background: color-mix(in oklab, var(--accent) 80%, transparent);
+  opacity: 0;
+  animation: particle-burst 0.4s ease-out forwards;
+}
+
+@keyframes particle-burst {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0.4);
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(var(--x), var(--y)) scale(1);
+  }
+}
+
+.particle1 {
+  --x: -24px;
+  --y: -18px;
+}
+
+.particle2 {
+  --x: 24px;
+  --y: -20px;
+}
+
+.particle3 {
+  --x: -30px;
+  --y: 4px;
+}
+
+.particle4 {
+  --x: 30px;
+  --y: 2px;
+}
+
+.particle5 {
+  --x: -12px;
+  --y: -28px;
+}
+
+.particle6 {
+  --x: 10px;
+  --y: -30px;
+}

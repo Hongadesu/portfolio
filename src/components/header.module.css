@@ -1,0 +1,128 @@
+@reference "tailwindcss";
+
+.header {
+  @apply w-full select-none;
+
+  height: 32rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 10px #00000065;
+}
+
+/* header mask */
+.header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.headerGrid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  align-content: center;
+  background: transparent;
+
+  display: grid;
+  gap: 2rem;
+  grid-template-areas: 'one two';
+  z-index: 2;
+}
+
+.headerGridCellOne {
+  @apply size-40 rounded-full border-8 text-xl select-none;
+  border-color: color-mix(in oklab, var(--accent3-800) 50%, transparent);
+  box-shadow: 0 5px 10px #00000065;
+  justify-self: end;
+  grid-area: one;
+}
+
+.headerGridCellTwo {
+  @apply flex flex-col gap-4;
+  align-items: start;
+  justify-self: start;
+  align-self: center;
+  grid-area: two;
+}
+
+.headerGridCellTwo > .headerTitle {
+  @apply flex flex-col gap-4;
+  align-items: start;
+}
+
+.headerGridCellTwo > .headerTitle > .name {
+  @apply text-4xl font-black;
+  color: var(--neutral1-900);
+}
+
+.headerGridCellTwo > .headerTitle > .label {
+  @apply text-lg font-semibold;
+  color: var(--neutral1-900);
+}
+
+.headerGridCellTwo > .headerTags {
+  @apply flex flex-wrap gap-3;
+}
+
+.tag {
+  @apply rounded-lg px-2 py-1 text-xs font-semibold;
+  color: var(--on-primary);
+  background: var(--primary);
+  box-shadow: 0px 0px 20px -2px
+    color-mix(in oklab, var(--primary) 80%, transparent);
+}
+
+/* 1024px */
+@media (width < 64rem) {
+  .headerGridCellOne {
+    @apply size-32;
+  }
+
+  .headerGridCellTwo > .headerTitle > .name {
+    @apply text-2xl;
+  }
+}
+
+/* 768px */
+@media (width < 48rem) {
+  .headerGridCellTwo > .headerTitle > .name {
+    @apply text-xl;
+  }
+}
+
+/* 640px */
+@media (width < 40rem) {
+  .header {
+    height: 28rem;
+  }
+
+  .headerGrid {
+    grid-template-areas:
+      'one'
+      'two'
+      'three';
+  }
+
+  .headerGridCellOne {
+    @apply size-24;
+    justify-self: center;
+  }
+
+  .headerGridCellTwo {
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .headerGridCellTwo > .headerTitle {
+    align-items: center;
+  }
+
+  .headerGridCellTwo > .headerTags {
+    justify-content: center;
+  }
+}

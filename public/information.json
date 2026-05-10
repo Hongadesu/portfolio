@@ -1,0 +1,127 @@
+{
+  "name": "Honga",
+  "label": "前端開發熱愛者",
+  "headImg": "Watermelon_monet_style.jpg",
+  "headBgImg": "pixel-Image_20260422_163700.png",
+  "githubHome": "https://github.com/Hongadesu",
+  "email": "hongawork@outlook.com",
+  "skillTags": [
+    "HTML",
+    "CSS",
+    "JS",
+    "React",
+    "TS",
+    "Zustand",
+    "Next.js",
+    "Vitest",
+    "React Router",
+    "Git"
+  ],
+  "selfDescription": "I am a software developer with a passion for web development, with experience building modern interfaces using the React ecosystem.\n\nI enjoy creating small tools based on web technologies, as well as developing desktop applications. I often use Electron, Pywebview, and Tauri to build cross-platform desktop apps.",
+  "projects": [
+    {
+      "projName": "PromptBuilder",
+      "tags": [
+        "React/Tailwind/Zustand", 
+        "React Router", 
+        "Jest", 
+        "Pywebview"
+      ],
+      "description": "A highly customizable and mobild first Template for personal portfolio and blog",
+      "imgSrc": "projects/proj-promptbuilder.png",
+      "link": "https://github.com/Hongadesu/PromptBuilder"
+    },
+    {
+      "projName": "LaplaceAI - Akashic AI Chat Page",
+      "tags": [
+        "React/Tailwind", 
+        "Next.js", 
+        "Vitest"
+      ],
+      "description": "A modern AI chat interface featuring real-time streaming responses and a responsive design, built for the Akashic AI ecosystem.",
+      "imgSrc": "projects/proj-laplace-chat-ai.png",
+      "link": "https://laplaceai.co"
+    },
+    {
+      "projName": "AI Schema Editor",
+      "tags": [
+        "React/Tailwind/Zustand", 
+        "React Hook Form"
+      ],
+      "description": "A data collection platform for building low-code dynamic forms, powered by AI-driven form filling and human validation.",
+      "imgSrc": "projects/proj-schema-editor.png"
+    },
+    {
+      "projName": "Material You Palette",
+      "tags": [
+        "React/Styled-Components",
+        "Jotai"
+      ],
+      "description": "A tool that makes it easy to generate and use Material You color palettes as design tokens.",
+      "imgSrc": "projects/proj-material-you-palette.gif"
+    },
+    {
+      "projName": "Wordout",
+      "tags": [
+        "React/Tailwind/Zustand",
+        "React Hook Form",
+        "Electron"
+      ],
+      "description": "Wordout turns your collected words into daily workouts. Build your vocabulary, one session at a time.",
+      "imgSrc": "projects/proj-wordout.jpg",
+      "isWorking": true
+    }
+  ],
+  "experiments": [
+    {
+      "projName": "Hey",
+      "tags": [
+        "Python",
+        "Click",
+        "CLI"
+      ],
+      "description": "A tiny CLI tool for asking AI questions directly from the terminal.",
+      "imgSrc": "experiments/exp-hey-ai-demo.gif"
+    },
+    {
+      "projName": "3D Viewer",
+      "tags": [
+        "React",
+        "React Three Fiber",
+        "Blender",
+        "Pywebview"
+      ],
+      "description": "A lightweight project for displaying 3D assets on the web.",
+      "imgSrc": "experiments/exp-3d-viewer.gif"
+    },
+    {
+      "projName": "Financial Agents Platform",
+      "tags": [
+        "React/Tailwind/Zustand",
+        "React Router",
+        "FastAPI",
+        "Pywebview",
+        "Express",
+        "Nginx",
+        "Docker"
+      ],
+      "description": "A platform that allows users to create and manage their own financial input and output with AI agents. (Partial View due to confidentiality)",
+      "imgSrc": "experiments/exp-financial-agent-platform.gif",
+      "isPrivate": true
+    },
+    {
+      "projName": "Russian Alphabet Typing Practice",
+      "tags": [
+        "HTML/CSS/JS"
+      ],
+      "description": "Practice typing and pronunciation of the Russian alphabet",
+      "imgSrc": "experiments/exp-russian-typing-practice-demo.gif"
+    }
+  ],
+  "details": [
+    {
+      "id": "material-you-palette",
+      "detail": "It allows you to convert these palettes into CSS variables, so they can be seamlessly integrated into your web development color system."
+    }
+  ]
+}

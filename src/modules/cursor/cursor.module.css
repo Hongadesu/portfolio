@@ -1,0 +1,91 @@
+:root {
+  --pointer-darker: var(--accent3-200);
+  --pointer-lighter: var(--accent3-800);
+}
+
+.pointer {
+  --width: 3rem;
+  --height: 3rem;
+  --display: block;
+
+  display: var(--display);
+
+  position: fixed;
+  pointer-events: none;
+  z-index: 10;
+
+  width: var(--width);
+  height: var(--height);
+
+  /* init position top-0 left-0 */
+  top: calc(var(--height) / -2);
+  left: calc(var(--width) / -2);
+
+  transition:
+    transform 0.2s ease-out,
+    width 0.2s ease-out,
+    height 0.2s ease-out,
+    top 0.2s ease-out,
+    left 0.2s ease-out;
+}
+
+.pointer div {
+  position: absolute;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-width: 0.25rem;
+  border-color: var(--accent);
+  animation: shine 2s infinite ease-in-out;
+}
+
+@keyframes shine {
+  0% {
+    border-color: var(--pointer-darker);
+  }
+  50% {
+    border-color: var(--pointer-lighter);
+  }
+  100% {
+    border-color: var(--pointer-darker);
+  }
+}
+
+.pointer div {
+  animation: shine 2s infinite ease-in-out;
+}
+
+.pointer div:nth-child(1) {
+  top: 0;
+  left: 0;
+  border-top-style: solid;
+  border-bottom-style: none;
+  border-left-style: solid;
+  border-right-style: none;
+}
+
+.pointer div:nth-child(2) {
+  top: 0;
+  right: 0;
+  border-top-style: solid;
+  border-bottom-style: none;
+  border-left-style: none;
+  border-right-style: solid;
+}
+
+.pointer div:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  border-top-style: none;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-style: none;
+}
+
+.pointer div:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  border-top-style: none;
+  border-bottom-style: solid;
+  border-left-style: none;
+  border-right-style: solid;
+}
